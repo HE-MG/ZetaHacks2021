@@ -1,0 +1,4 @@
+1. Install NPM
+2. cd to the project directory
+3. Run "npm install"
+4. Run "ng serve -o", the app will open in new browser tab

@@ -1,0 +1,118 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <!-- Top action info. -->
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header card-header-success">
+            <h4 class="card-title">Rolling investment planner</h4>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>Enable/Disable rolling investment</li>
+              <li>
+                Set the rounding balance amount (e.g. round to nearest 10/-)
+              </li>
+              <li>
+                Choose Investment profile
+                <div class="btn-group">
+                  <button>Conservative</button>
+                  <button>Moderate</button>
+                  <button>Aggressive</button>
+                </div>
+              </li>
+              <li>View portfolio related information</li>
+              <li>Add lumpsum amount</li>
+              <li>Start a new SIP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Current investment profile -->
+      <div class="col-md-4">
+        <div class="card card-chart">
+          <div class="card-header card-header-warning">
+            <div class="center"><p>👍 Moderate</p></div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Current investment profile</h4>
+            <p class="card-category">
+              This profile is an inducator for the expected returns from our
+              rolling investment feature. You can modify this setting any time
+              to - Conservative, Moderate or Aggressive.
+              <br />
+              TIP: Remember high risk is equal to high return!
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">access_time</i> updated 4 minutes ago
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Investment info. graphs -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card card-chart">
+          <div class="card-header card-header-warning">
+            <div class="ct-chart" id="dailySalesChart"></div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Sector wise pf breakup(%)</h4>
+            <p class="card-category">
+              <span class="text-success"
+                ><i class="fa fa-long-arrow-up"></i> 10.1%
+              </span>
+              Today's P&L
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">access_time</i> updated 4 minutes ago
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card card-chart">
+          <div class="card-header card-header-danger">
+            <div class="ct-chart" id="websiteViewsChart"></div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Market cap wise pf breakdown(%)</h4>
+            <p class="card-category">
+              Breakdown of the current portfolio (Market Cap)
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">access_time</i> updated 4 minutes ago
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card card-chart">
+          <div class="card-header card-header-info">
+            <div class="ct-chart" id="completedTasksChart"></div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Estimated portfolio growth</h4>
+            <p class="card-category">*Current rate of return at 10.1%</p>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">access_time</i> updated 4 minutes ago
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+.home-content {
+  background-color: black !important;
+}
+
+.home_banner {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}

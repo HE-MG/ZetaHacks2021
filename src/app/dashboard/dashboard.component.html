@@ -1,0 +1,616 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-warning card-header-icon">
+            <div class="card-icon">
+              <i class="material-icons">attach_money</i>
+            </div>
+            <p class="card-category">Balance</p>
+            <h3 class="card-title">₹ 412</h3>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons text-danger">warning</i>
+              <a href="javascript:void(0)">Add money</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-success card-header-icon">
+            <div class="card-icon">
+              <i class="material-icons">payment</i>
+            </div>
+            <p class="card-category">Total Expenditure(₹)</p>
+            <h3 class="card-title">₹ 1088</h3>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">date_range</i> Current Month(August)
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-danger card-header-icon">
+            <div class="card-icon">
+              <i class="material-icons">favorite</i>
+            </div>
+            <p class="card-category">Cashback Earned</p>
+            <h3 class="card-title">₹ 10</h3>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">date_range</i> Lifetime
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-info card-header-icon">
+            <div class="card-icon">
+              <i class="material-icons">sentiment_very_satisfied</i>
+            </div>
+            <p class="card-category">Total amount investment</p>
+            <h3 class="card-title">₹4.56</h3>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">date_range</i> Lifetime
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Graphs -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card card-chart">
+          <div class="card-header card-header-success">
+            <div class="ct-chart" id="dailySalesChart"></div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Daily Expenditure(₹)</h4>
+            <p class="card-category">
+              <span class="text-success"
+                ><i class="fa fa-long-arrow-up"></i> 5%
+              </span>
+              increase in today's expenditure
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">access_time</i> updated 4 minutes ago
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card card-chart">
+          <div class="card-header card-header-warning">
+            <div class="ct-chart" id="websiteViewsChart"></div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Expenditure breakdown(₹)</h4>
+            <p class="card-category">
+              Breakdown of the monthly expenditure (August)
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">access_time</i> updated 4 minutes ago
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card card-chart">
+          <div class="card-header card-header-primary">
+            <div class="ct-chart" id="completedTasksChart"></div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Estimated portfolio growth</h4>
+            <p class="card-category">*Rate of return estimated at 12%</p>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">access_time</i> updated 1 day ago
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom cards -->
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <div class="card">
+          <div class="card-header card-header-tabs card-header-primary">
+            <div class="nav-tabs-navigation">
+              <div class="nav-tabs-wrapper">
+                <span class="nav-tabs-title">Add reward challenges for children:</span>
+                <ul class="nav nav-tabs" data-tabs="tabs">
+                  <li class="nav-item">
+                    <a
+                      mat-button
+                      class="nav-link active"
+                      href="#profile"
+                      data-toggle="tab"
+                    >
+                      <i class="material-icons">lightbulb</i> Tasks
+                      <div class="ripple-container"></div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      mat-button
+                      class="nav-link"
+                      href="#messages"
+                      data-toggle="tab"
+                    >
+                      <i class="material-icons">code</i> Courses
+                      <div class="ripple-container"></div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      mat-button
+                      class="nav-link"
+                      href="#settings"
+                      data-toggle="tab"
+                    >
+                      <i class="material-icons">attach_money</i> Financial
+                      <div class="ripple-container"></div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane active" id="profile">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              checked
+                            />
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        Organize cupboard and clean room
+                      </td>
+                      <td class="td-actions text-right">
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Edit Task"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-primary btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">edit</i>
+                        </button>
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Remove"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-danger btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">close</i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                            />
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        Brush twice a day for 30 days
+                      </td>
+                      <td class="td-actions text-right">
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Edit Task"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-primary btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">edit</i>
+                        </button>
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Remove"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-danger btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">close</i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                            />
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        Complete homework on time
+                      </td>
+                      <td class="td-actions text-right">
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Edit Task"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-primary btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">edit</i>
+                        </button>
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Remove"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-danger btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">close</i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              checked
+                            />
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        Exercise daily for 30 minutes
+                      </td>
+                      <td class="td-actions text-right">
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Edit Task"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-primary btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">edit</i>
+                        </button>
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Remove"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-danger btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">close</i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="tab-pane" id="messages">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              checked
+                            />
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        Complete the "Getting started with Stock market - For kids" course
+                      </td>
+                      <td class="td-actions text-right">
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Edit Task"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-primary btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">edit</i>
+                        </button>
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Remove"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-danger btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">close</i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                            />
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        Complete course assignment work
+                      </td>
+                      <td class="td-actions text-right">
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Edit Task"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-primary btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">edit</i>
+                        </button>
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Remove"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-danger btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">close</i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tab-pane" id="settings">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                            />
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        Save at least ₹ 100 this month (August)
+                      </td>
+                      <td class="td-actions text-right">
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Edit Task"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-primary btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">edit</i>
+                        </button>
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Remove"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-danger btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">close</i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              checked
+                            />
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        Spend only on healthy food outlets
+                      </td>
+                      <td class="td-actions text-right">
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Edit Task"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-primary btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">edit</i>
+                        </button>
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Remove"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-danger btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">close</i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              checked
+                            />
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        TBD
+                      </td>
+                      <td class="td-actions text-right">
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Edit Task"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-primary btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">edit</i>
+                        </button>
+                        <button
+                          mat-raised-button
+                          type="button"
+                          matTooltip="Remove"
+                          [matTooltipPosition]="'above'"
+                          class="btn btn-danger btn-link btn-sm btn-just-icon"
+                        >
+                          <i class="material-icons">close</i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12">
+        <div class="card">
+          <div class="card-header card-header-success">
+            <h4 class="card-title">Latest transactions summary</h4>
+            <p class="card-category">
+              Transactions done in current month (August)
+            </p>
+          </div>
+          <div class="card-body table-responsive">
+            <table class="table table-hover">
+              <thead class="text-warning">
+                <th>S.No</th>
+                <th>Outlet</th>
+                <th>Amount</th>
+                <th>Location</th>
+                <th>Date</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td>Amazon</td>
+                  <td>₹50</td>
+                  <td>Online debit</td>
+                  <td>08-Aug-2021</td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Other</td>
+                  <td>₹20</td>
+                  <td>Delhi</td>
+                  <td>08-Aug-2021</td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>KFC</td>
+                  <td>₹150</td>
+                  <td>POS</td>
+                  <td>06-Aug-2021</td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Subway</td>
+                  <td>₹100</td>
+                  <td>POS</td>
+                  <td>05-Aug-2021</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
